@@ -1,30 +1,26 @@
-#include<iostream>
- 
+// Example program
+#include <iostream>
 using namespace std;
- 
+
 int main()
 {
-   int n, c, first = 0, second = 1, next;
- 
-   cout << "Enter the number of terms of Fibonacci series you want" << endl;
-   cin >> n;
-   
-  if (n >0)
-   for ( c = 0 ; c < n ; c++ )
-   {
-      if ( c <= 1 )
-         next = c;
+ int n,c, first=0, second=1,next;    
+  cout<<"input your number"<<endl;
+  cin>>n;
+  cout<<"the fibonacci sequence is"<<endl;
+  
+  if(n>0)
+  for(c=0;c<=n;c++){
+      if(c<1)
+       next = c;
       else
-      {
-         next = first + second;
-         first = second;
-         second = next;
+      next=first+second;
+      first = second;
+      second =next;
+      cout<<next<<endl;
       }
-      cout << next << endl;
-      cout << "First " << n << " terms of Fibonacci series are :- " << endl;      
-   }   
-   else 
-   cout<<"input error,pls amend the correct one "<<endl;
-   
-   return 0;
+  else
+  cout<<"pls input the correct possitive integer"<<endl;
+  return 0;
+  
 }
