@@ -3,7 +3,8 @@ using namespace std;
 
 int main() {
     
-    int c,x=1000;
+    int c;
+    float x=1000.000000;
     for(c=47;c>0;c--)
     {
         
