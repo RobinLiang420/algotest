@@ -8,10 +8,9 @@ int main() {
     for(c=47;c>0;c--)
     {
         
-        x=1000+(x/(1+0.0171/12)); // reverse calculate deposit x
-        
+        x=(1000+x)/(1+0.0171/12); // reverse calculate deposit x
+        cout<<"in "<<c<<"month the deposit is"<<x<<endl;
     }
-    
-    cout<<x;
+     
 	return 0;
 }
