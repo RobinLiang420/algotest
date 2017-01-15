@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     
     int c;
-    float x=1000.000000;
+    float x=1000;
     for(c=47;c>0;c--)
     {
         
